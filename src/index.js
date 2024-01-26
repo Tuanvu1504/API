@@ -17,8 +17,12 @@ mongoose.connect(DB_URL ).then(()=>{
 })
 
 app.use ('/api',router )
+app.get('/', (req,res)=>{
+  res.send('hey this is my api running')
+})
 
 
-app.listen(8000, ()=>{
+app.listen(PORT, ()=>{
   console.log(`Connected to port ${PORT}`);
 })
+
