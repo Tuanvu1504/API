@@ -5,17 +5,15 @@
   "main": "index.js",
   "type": "module",
   "engines": {
-    "node": "16.20.2"
+    "node": "14.x"
   },
   "scripts": {
-    "start": "node --experimental-specifier-resolution=node ./src/index.js",
-    "build": "npm run clean && npm run build-babel"
+    "start": "nodemon --experimental-specifier-resolution=node ./src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@babel/runtime": "^7.23.9",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.1",
