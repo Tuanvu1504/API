@@ -6,8 +6,12 @@
       "use": "@now/node"
     }
   ],
-  
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/404.js" }]
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "./src/index.js"
+    }
+  ]
 }
 
   
